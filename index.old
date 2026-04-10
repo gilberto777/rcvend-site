@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>RC Vend - Em Manutenção</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 30px;
+        }
+
+        .gear {
+            width: 140px;
+            margin-bottom: 25px;
+            animation: spin 6s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 18px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .brand {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem da engrenagem -->
+        <img 
+            src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" 
+            alt="Manutenção" 
+            class="gear"
+        >
+
+        <h1>Site em Manutenção</h1>
+        <p>
+            Estamos realizando melhorias para oferecer uma experiência ainda melhor.
+            <br>
+            Voltamos em breve!
+        </p>
+
+        <div class="brand">
+            © 2026 • RC Vend
+        </div>
+    </div>
+
+</body>
+</html>
