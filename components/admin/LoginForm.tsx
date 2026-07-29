@@ -16,8 +16,27 @@ export function LoginForm() {
 
     const supabase = createSupabaseClient();
     if (!supabase) {
-      setError("Configure NEXT_PUBLIC_SUPABASE_URL e NEXT_PUBLIC_SUPABASE_ANON_KEY para ativar o login.");
-      setLoading(false);
+      const form = new FormData(event.currentTarget);
+      const response = await fetch("/api/admin/local-login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: String(form.get("email")),
+          password: String(form.get("password")),
+        }),
+      });
+      const result = (await response.json().catch(() => null)) as {
+        error?: string;
+      } | null;
+
+      if (!response.ok) {
+        setError(result?.error ?? "Não foi possível iniciar a sessão local.");
+        setLoading(false);
+        return;
+      }
+
+      router.push("/admin");
+      router.refresh();
       return;
     }
 
@@ -68,6 +87,11 @@ export function LoginForm() {
         <button disabled={loading} className="rounded-2xl bg-brand px-5 py-4 font-black text-white hover:bg-brand-strong disabled:opacity-60">
           {loading ? "Entrando..." : "Entrar"}
         </button>
+        {!process.env.NEXT_PUBLIC_SUPABASE_URL && (
+          <p className="rounded-2xl border border-blue-200 bg-blue-50 p-3 text-sm font-semibold text-blue-800">
+            Acesso local ativo. Use as credenciais configuradas neste computador.
+          </p>
+        )}
         {error && <p className="rounded-2xl border border-red-200 bg-red-50 p-3 text-sm font-semibold text-red-700">{error}</p>}
       </div>
     </form>
