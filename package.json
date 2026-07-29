@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "type-check": "tsc --noEmit",
-    "import:gilcorretor": "tsx scripts/import-gilcorretor-properties.ts"
+    "import:gilcorretor": "tsx scripts/import-gilcorretor-properties.ts",
+    "sync:visionmobia": "tsx scripts/sync-visionmobia-catalog.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",

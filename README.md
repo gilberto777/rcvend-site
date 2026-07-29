@@ -49,6 +49,16 @@ OPENAI_MODEL=gpt-4.1-mini
 Sem Supabase configurado, o site usa dados ficticios locais para desenvolvimento.
 Sem `OPENAI_API_KEY`, a IA do admin usa uma sugestao local simples para testes.
 
+### Atualizando o catálogo local
+
+O projeto inclui uma cópia local dos imóveis públicos e aprovados do Vision Mobia. Para sincronizar novamente em modo somente leitura:
+
+```bash
+npm run sync:visionmobia
+```
+
+O comando atualiza `data/properties.json` e não grava no Supabase de origem.
+
 ## Rotas principais
 
 - `/`: home comercial do portal

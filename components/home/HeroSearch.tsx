@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Search } from "lucide-react";
+import { propertyProgramOptions } from "@/lib/property-programs";
 
 const searchTabs = [
   { label: "Comprar", href: "/imoveis?purpose=sale" },
@@ -9,7 +10,15 @@ const searchTabs = [
   { label: "Studios", href: "/imoveis?purpose=sale&q=studio" },
 ];
 
-const quickExamples = ["Brooklin", "Moema", "varanda", "studio", "metrô"];
+const quickFilters = [
+  ...propertyProgramOptions.map((program) => ({
+    label: program.label,
+    name: "program",
+    value: program.value,
+  })),
+  { label: "Brooklin", name: "q", value: "Brooklin" },
+  { label: "Moema", name: "q", value: "Moema" },
+];
 
 export function HeroSearch() {
   return (
@@ -35,21 +44,21 @@ export function HeroSearch() {
 
       <div className="flex items-center gap-2 overflow-x-auto pb-4">
         <span className="shrink-0 text-xs font-bold uppercase tracking-[0.14em] text-muted">Exemplos</span>
-        {quickExamples.map((filter) => (
+        {quickFilters.map((filter) => (
           <button
-            key={filter}
+            key={filter.label}
             type="submit"
-            name="q"
-            value={filter}
+            name={filter.name}
+            value={filter.value}
             className="shrink-0 rounded-full border border-line bg-background px-4 py-2 text-sm font-bold text-muted transition hover:border-brand hover:text-brand"
           >
-            {filter}
+            {filter.label}
           </button>
         ))}
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-[minmax(0,1fr)_minmax(0,140px)_minmax(0,180px)_minmax(0,150px)_minmax(0,160px)]">
-        <label className="flex min-h-14 min-w-0 items-center gap-3 rounded-2xl border border-line bg-background px-4 py-3 focus-within:border-brand/45 focus-within:bg-white sm:col-span-2 xl:col-span-1">
+      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+        <label className="flex min-h-14 min-w-0 items-center gap-3 rounded-2xl border border-line bg-background px-4 py-3 focus-within:border-brand/45 focus-within:bg-white sm:col-span-2 xl:col-span-3">
           <Search className="h-5 w-5 text-brand" />
           <input
             name="q"
@@ -87,6 +96,17 @@ export function HeroSearch() {
           <option value="studio">Studios</option>
           <option value="house">Casas</option>
           <option value="commercial">Comercial</option>
+        </select>
+        <select
+          name="program"
+          defaultValue="all"
+          aria-label="Modalidade habitacional"
+          className="min-h-14 min-w-0 rounded-2xl border border-line bg-white px-4 py-3 text-sm font-bold text-brand-strong outline-none [color-scheme:light]"
+        >
+          <option value="all">Modalidade</option>
+          {propertyProgramOptions.map((program) => (
+            <option key={program.value} value={program.value}>{program.label}</option>
+          ))}
         </select>
         <button className="min-h-14 min-w-0 rounded-2xl bg-cta px-6 py-3 text-sm font-extrabold text-white shadow-lg shadow-cta/20 transition hover:-translate-y-0.5 hover:bg-cta-hover">
           Buscar imóvel

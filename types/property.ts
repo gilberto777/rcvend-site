@@ -2,6 +2,7 @@ export type PropertyPurpose = "sale" | "rent" | "launch";
 export type PropertyStage = "launch" | "under_construction" | "ready";
 export type PropertyStatus = "available" | "reserved" | "sold" | "rented" | "inactive";
 export type PropertyType = "studio" | "apartment" | "house" | "penthouse" | "commercial" | "land";
+export type PropertyProgram = "his2" | "hmp" | "r2v" | "nr";
 export type ApprovalStatus = "pending" | "approved" | "rejected";
 export type UserRole = "admin" | "agent" | "agency_owner" | "developer";
 export type UserStatus = "pending" | "active" | "blocked";
@@ -78,6 +79,7 @@ export type PropertyFilters = {
   type?: PropertyType | "all";
   city?: string;
   neighborhood?: string;
+  program?: PropertyProgram | "all";
   sort?: "recent" | "price_asc" | "price_desc" | "area_desc";
   page?: number;
 };

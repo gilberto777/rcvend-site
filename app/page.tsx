@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Bot, Building2, CheckCircle2, LineChart, MapPinned, MessageCircle, Search, ShieldCheck, Sparkles } from "lucide-react";
 import { AiPreviewSection } from "@/components/home/AiPreviewSection";
-import { BenefitsSection } from "@/components/home/BenefitsSection";
 import { HeroSearch } from "@/components/home/HeroSearch";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -11,6 +10,7 @@ import { PropertyCard } from "@/components/property/PropertyCard";
 import { blogPosts } from "@/lib/blog-posts";
 import { getFeaturedProperties, getLaunches } from "@/lib/properties";
 import { getWhatsAppUrl } from "@/lib/formatters";
+import { propertyProgramOptions } from "@/lib/property-programs";
 
 export const metadata: Metadata = {
   title: "RC Vend | Encontre imóveis com uma busca mais inteligente",
@@ -22,14 +22,6 @@ export const metadata: Metadata = {
     url: "/",
   },
 };
-
-const trustBlocks = [
-  { title: "Imóveis revisados", text: "Anúncios revisados antes da publicação para manter informações claras e comparáveis." },
-  { title: "WhatsApp direto", text: "Atendimento direto pelo WhatsApp quando você encontrar uma oportunidade." },
-  { title: "Anúncios aprovados", text: "Novos anúncios e parceiros estão sujeitos à aprovação do portal." },
-  { title: "Portal em lançamento", text: "Fase de lançamento com evolução contínua da experiência e do catálogo." },
-  { title: "Parceiros do mercado", text: "Corretores, imobiliárias e construtoras parceiros em São Paulo." },
-];
 
 const reasons = [
   { icon: Search, title: "Busca mais inteligente", text: "Encontre oportunidades por bairro, cidade, tipo de imóvel, finalidade e perfil de moradia." },
@@ -138,7 +130,7 @@ export default async function Home() {
           className="object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,38,83,0.96)_0%,rgba(0,38,83,0.86)_38%,rgba(0,38,83,0.52)_68%,rgba(0,38,83,0.18)_100%)]" />
-        <div className="container-page relative grid min-h-[620px] items-center gap-10 py-12 lg:grid-cols-[minmax(0,0.72fr)_minmax(600px,1.28fr)] xl:gap-14">
+        <div className="container-page relative grid min-h-[520px] items-center gap-10 py-10 lg:grid-cols-[minmax(0,0.72fr)_minmax(600px,1.28fr)] xl:gap-14">
           <div className="max-w-2xl">
             <p className="inline-flex rounded-full border border-accent/40 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-accent">
               Portal inteligente de imóveis
@@ -177,29 +169,27 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="border-b border-line bg-white py-8">
-        <div className="container-page grid gap-4 md:grid-cols-5">
-          {trustBlocks.map((block) => (
-            <div key={block.title} className="border-l-2 border-accent pl-4">
-              <p className="font-black text-brand-strong">{block.title}</p>
-              <p className="mt-1 text-sm leading-6 text-muted">{block.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <BenefitsSection />
-
-      <section className="container-page py-16">
+      <section className="container-page py-12">
         <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.22em] text-brand">Curadoria comercial</p>
-            <h2 className="mt-2 text-3xl font-extrabold md:text-4xl">Imóveis em destaque</h2>
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-brand">Oportunidades recentes</p>
+            <h2 className="mt-2 text-3xl font-extrabold md:text-4xl">Imóveis para começar sua busca</h2>
           </div>
           <Link href="/imoveis" className="font-bold text-brand hover:text-brand-strong">Ver todos os imóveis</Link>
         </div>
-        <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {featured.slice(0, 4).map((property) => <PropertyCard key={property.id} property={property} />)}
+        <div className="mt-6 flex flex-wrap gap-2">
+          {propertyProgramOptions.map((program) => (
+            <Link
+              key={program.value}
+              href={`/imoveis?program=${program.value}`}
+              className="rounded-full border border-brand/20 bg-brand/5 px-4 py-2 text-sm font-black text-brand transition hover:border-brand hover:bg-brand hover:text-white"
+            >
+              Ver imóveis {program.label}
+            </Link>
+          ))}
+        </div>
+        <div className="mt-7 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {featured.slice(0, 8).map((property) => <PropertyCard key={property.id} property={property} />)}
         </div>
       </section>
 

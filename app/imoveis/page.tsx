@@ -22,16 +22,35 @@ function getParam(params: Record<string, string | string[] | undefined>, key: st
   return Array.isArray(value) ? value[0] : value;
 }
 
+function getPaginationHref(params: Record<string, string | string[] | undefined>, page: number) {
+  const query = new URLSearchParams();
+
+  for (const [key, value] of Object.entries(params)) {
+    const firstValue = Array.isArray(value) ? value[0] : value;
+    if (firstValue && key !== "page") query.set(key, firstValue);
+  }
+
+  query.set("page", String(page));
+  return `/imoveis?${query.toString()}`;
+}
+
 export default async function PropertiesPage({ searchParams }: PageProps) {
   const params = await searchParams;
+  const requestedPage = Number(getParam(params, "page") ?? "1");
   const filters: Filters = {
     q: getParam(params, "q"),
     purpose: (getParam(params, "purpose") as Filters["purpose"]) ?? "all",
     stage: (getParam(params, "stage") as Filters["stage"]) ?? "all",
     type: (getParam(params, "type") as Filters["type"]) ?? "all",
+    program: (getParam(params, "program") as Filters["program"]) ?? "all",
     sort: (getParam(params, "sort") as Filters["sort"]) ?? "recent",
+    page: Number.isFinite(requestedPage) && requestedPage > 0 ? Math.floor(requestedPage) : 1,
   };
-  const properties = await getProperties(filters);
+  const allProperties = await getProperties(filters);
+  const pageSize = 24;
+  const totalPages = Math.max(1, Math.ceil(allProperties.length / pageSize));
+  const currentPage = Math.min(filters.page ?? 1, totalPages);
+  const properties = allProperties.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
   return (
     <main>
@@ -45,10 +64,10 @@ export default async function PropertiesPage({ searchParams }: PageProps) {
       </section>
 
       <section className="container-page -mt-8 pb-16">
-        <PropertyFilters q={filters.q} purpose={filters.purpose} stage={filters.stage} type={filters.type} sort={filters.sort} />
+        <PropertyFilters q={filters.q} purpose={filters.purpose} stage={filters.stage} type={filters.type} program={filters.program} sort={filters.sort} />
         <div className="mt-8 flex flex-col justify-between gap-4 md:flex-row md:items-center">
           <div>
-            <p className="text-sm font-semibold text-muted">{properties.length} imóveis encontrados</p>
+            <p className="text-sm font-semibold text-muted">{allProperties.length} imóveis encontrados</p>
             <p className="text-sm text-muted">Ordene e refine sua busca para comparar melhor</p>
           </div>
           <Link href="/mapa#mapa" className="inline-flex items-center justify-center rounded-2xl border border-brand px-5 py-3 text-sm font-black text-brand hover:bg-brand hover:text-white">
@@ -64,6 +83,21 @@ export default async function PropertiesPage({ searchParams }: PageProps) {
             <p className="mt-2 text-muted">Tente remover filtros ou buscar por outro bairro.</p>
           </div>
         )}
+        {allProperties.length > pageSize ? (
+          <nav aria-label="Paginação dos imóveis" className="mt-10 flex flex-wrap items-center justify-center gap-3">
+            {currentPage > 1 ? (
+              <Link href={getPaginationHref(params, currentPage - 1)} className="rounded-full border border-brand px-5 py-3 text-sm font-black text-brand transition hover:bg-brand hover:text-white">
+                Página anterior
+              </Link>
+            ) : null}
+            <span className="px-3 text-sm font-bold text-muted">Página {currentPage} de {totalPages}</span>
+            {currentPage < totalPages ? (
+              <Link href={getPaginationHref(params, currentPage + 1)} className="rounded-full bg-brand px-5 py-3 text-sm font-black text-white transition hover:bg-brand-strong">
+                Próxima página
+              </Link>
+            ) : null}
+          </nav>
+        ) : null}
       </section>
       <SiteFooter />
     </main>

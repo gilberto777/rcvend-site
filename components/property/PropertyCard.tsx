@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Bath, BedDouble, Car, Mail, MessageCircle, MapPin, Ruler } from "lucide-react";
 import { formatArea, formatDisplayText, formatPropertyPrice, getWhatsAppUrl } from "@/lib/formatters";
+import { getPropertyProgramLabel, getPropertyPrograms } from "@/lib/property-programs";
 import type { Property } from "@/types/property";
 
 type PropertyCardProps = {
@@ -23,6 +24,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
   const isStudio = property.type === "studio";
   const isCommercial = property.type === "commercial";
   const displayTitle = formatDisplayText(property.title);
+  const programs = getPropertyPrograms(property);
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gold/60 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-[0_18px_45px_rgba(197,155,69,0.22)]">
@@ -46,6 +48,15 @@ export function PropertyCard({ property }: PropertyCardProps) {
             {formatDisplayText(property.neighborhood)}, {formatDisplayText(property.city)}
           </p>
           <h3 className="mt-2 line-clamp-2 min-h-12 text-lg font-extrabold leading-snug text-foreground">{displayTitle}</h3>
+          {programs.length > 0 ? (
+            <div className="mt-3 flex flex-wrap gap-2">
+              {programs.map((program) => (
+                <span key={program} className="rounded-full border border-brand/20 bg-brand/5 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-brand">
+                  {getPropertyProgramLabel(program)}
+                </span>
+              ))}
+            </div>
+          ) : null}
           <p className="mt-3 text-2xl font-extrabold text-brand">{formatPropertyPrice(property)}</p>
           <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs font-semibold text-muted">
             <span className="flex items-center gap-1"><Ruler className="h-4 w-4 text-brand" />{formatArea(property.area)}</span>

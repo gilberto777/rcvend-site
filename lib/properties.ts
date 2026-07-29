@@ -1,4 +1,6 @@
+import catalogProperties from "@/data/properties.json";
 import { sampleProperties } from "@/lib/mock-data";
+import { getPropertyPrograms } from "@/lib/property-programs";
 import { createSupabaseClient } from "@/lib/supabase/client";
 import type { Lead, Neighborhood, Property, PropertyFilters, PropertyFloorPlan, PropertyImage } from "@/types/property";
 
@@ -9,13 +11,28 @@ function normalize(value?: string) {
     .toLowerCase();
 }
 
+const localProperties = (catalogProperties as unknown as Property[]).length
+  ? (catalogProperties as unknown as Property[])
+  : sampleProperties;
+
 function applyLocalFilters(properties: Property[], filters: PropertyFilters = {}) {
   let result = properties.filter((property) => property.is_active && property.status !== "inactive" && property.approval_status !== "rejected" && property.approval_status !== "pending");
 
   if (filters.q) {
     const q = normalize(filters.q);
     result = result.filter((property) =>
-      [property.title, property.neighborhood, property.city, property.type, property.developer ?? ""]
+      [
+        property.title,
+        property.slug,
+        property.description,
+        property.neighborhood,
+        property.city,
+        property.type,
+        property.developer ?? "",
+        property.meta_title ?? "",
+        property.meta_description ?? "",
+        ...property.characteristics,
+      ]
         .map(normalize)
         .some((field) => field.includes(q)),
     );
@@ -39,6 +56,11 @@ function applyLocalFilters(properties: Property[], filters: PropertyFilters = {}
 
   if (filters.neighborhood) {
     result = result.filter((property) => normalize(property.neighborhood) === normalize(filters.neighborhood));
+  }
+
+  const program = filters.program;
+  if (program && program !== "all") {
+    result = result.filter((property) => getPropertyPrograms(property).includes(program));
   }
 
   switch (filters.sort) {
@@ -136,7 +158,7 @@ export async function getProperties(filters: PropertyFilters = {}) {
   const supabase = createSupabaseClient();
 
   if (!supabase) {
-    return applyLocalFilters([...sampleProperties], filters);
+    return applyLocalFilters([...localProperties], filters);
   }
 
   let query = supabase
@@ -167,12 +189,12 @@ export async function getProperties(filters: PropertyFilters = {}) {
   const { data, error } = await query.order(order.column, { ascending: order.ascending });
   if (error || !data) return applyLocalFilters([...sampleProperties], filters);
 
-  return (data as SupabasePropertyRow[]).map(mapPropertyFromSupabase);
+  return applyLocalFilters((data as SupabasePropertyRow[]).map(mapPropertyFromSupabase), filters);
 }
 
 export async function getFeaturedProperties() {
   const properties = await getProperties();
-  return properties.filter((property) => property.is_featured).slice(0, 6);
+  return properties.filter((property) => property.is_featured).slice(0, 8);
 }
 
 export async function getLaunches() {
@@ -184,7 +206,7 @@ export async function getPropertyBySlug(slug: string) {
   const supabase = createSupabaseClient();
 
   if (!supabase) {
-    return sampleProperties.find((property) => property.slug === slug && property.is_active) ?? null;
+    return localProperties.find((property) => property.slug === slug && property.is_active) ?? null;
   }
 
   const { data, error } = await supabase
@@ -196,7 +218,7 @@ export async function getPropertyBySlug(slug: string) {
     .single();
 
   if (error || !data) {
-    return sampleProperties.find((property) => property.slug === slug && property.is_active) ?? null;
+    return localProperties.find((property) => property.slug === slug && property.is_active) ?? null;
   }
 
   return mapPropertyFromSupabase(data as SupabasePropertyRow);
@@ -208,7 +230,7 @@ export async function getNeighborhoods() {
   if (!supabase) {
     return Array.from(
       new Map(
-        sampleProperties.map((property) => [
+        localProperties.map((property) => [
           `${property.city}-${property.state}-${property.neighborhood}`,
           {
             id: `${property.city}-${property.state}-${property.neighborhood}`,
