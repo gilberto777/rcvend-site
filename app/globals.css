@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f8fc;
+  --foreground: #101419;
+  --surface: #ffffff;
+  --muted: #5f6f82;
+  --line: #d8e3ed;
+  --brand: #0057a8;
+  --brand-strong: #002653;
+  --accent: #38b6ff;
+  --gold: #c59b45;
+  --cta: #087fc5;
+  --cta-hover: #0067a8;
+  --whatsapp: #25d366;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-accent: var(--accent);
+  --color-gold: var(--gold);
+  --color-cta: var(--cta);
+  --color-cta-hover: var(--cta-hover);
+  --color-whatsapp: var(--whatsapp);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(56, 182, 255, 0.32);
+}
+
+.container-page {
+  width: min(1480px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    width: min(1480px, calc(100% - 48px));
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-page {
+    width: min(1480px, calc(100% - 64px));
+  }
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0, 87, 168, 0.22);
+}
+
+.rich-text-editor p,
+.formatted-description p {
+  margin: 0;
+  color: var(--foreground);
+}
+
+.rich-text-editor h1,
+.rich-text-editor h2,
+.rich-text-editor h3,
+.formatted-description h1,
+.formatted-description h2,
+.formatted-description h3 {
+  margin: 0.9rem 0 0.35rem;
+  color: var(--foreground);
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.rich-text-editor h1,
+.formatted-description h1 {
+  font-size: 1.5rem;
+}
+
+.rich-text-editor h2,
+.formatted-description h2 {
+  font-size: 1.35rem;
+}
+
+.rich-text-editor h3,
+.formatted-description h3 {
+  font-size: 1.2rem;
+}
+
+.rich-text-editor ul,
+.rich-text-editor ol,
+.formatted-description ul,
+.formatted-description ol {
+  margin: 0.5rem 0;
+  padding-left: 1.35rem;
+}
+
+.rich-text-editor ul,
+.formatted-description ul {
+  list-style: disc;
+}
+
+.rich-text-editor ol,
+.formatted-description ol {
+  list-style: decimal;
+}
+
+.rich-text-editor li,
+.formatted-description li {
+  margin: 0.25rem 0;
+  color: var(--foreground);
+}
+
+.rich-text-editor blockquote,
+.formatted-description blockquote {
+  margin: 0.75rem 0;
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.rich-text-editor strong,
+.rich-text-editor b,
+.formatted-description strong,
+.formatted-description b {
+  color: var(--foreground);
+  font-weight: 900;
+}
+
+.rich-text-editor u,
+.formatted-description u {
+  text-decoration-color: rgba(107, 79, 196, 0.55);
+  text-underline-offset: 4px;
+}

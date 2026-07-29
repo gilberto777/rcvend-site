@@ -1,0 +1,12 @@
+-- Schema legado substituido por migrations.
+--
+-- Use a migration principal:
+-- supabase/migrations/202606150001_initial_rcvend_schema.sql
+--
+-- Via CLI:
+-- supabase db push
+-- supabase db seed
+--
+-- Via SQL Editor:
+-- 1. Execute a migration em supabase/migrations.
+-- 2. Execute supabase/seed.sql.

@@ -1,0 +1,915 @@
+{
+  "summary": {
+    "expected": 50,
+    "found": 50,
+    "photos": 904,
+    "with_coordinates": 50,
+    "numberless_addresses": 50,
+    "with_bold_name": 50,
+    "with_video": 10,
+    "with_tour": 9,
+    "all_valid": true
+  },
+  "items": [
+    {
+      "slug": "ayna-ipiranga-ipiranga-apartamentos",
+      "title": "Ayna Ipiranga | Apartamentos em Ipiranga para morar ou investir",
+      "address": "Rua Costa Aguiar em Ipiranga - São Paulo/SP",
+      "latitude": -23.58865,
+      "longitude": -46.606353,
+      "photos": 13,
+      "video_url": null,
+      "tour_url": "https://my.matterport.com/show/?m=SPc2NmzbQpf",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vibe-campo-belo-campo-belo-apartamentos",
+      "title": "Vibe Campo Belo | Apartamentos em Campo Belo para morar ou investir",
+      "address": "Rua José Batista Pereira em Campo Belo - São Paulo/SP",
+      "latitude": -23.619407,
+      "longitude": -46.681123,
+      "photos": 14,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vogel-moema-nr-moema-apartamentos",
+      "title": "Vogel Moema - NR | Apartamentos em Moema para morar ou investir",
+      "address": "Avenida Ibirapuera em Moema - São Paulo/SP",
+      "latitude": -23.60614,
+      "longitude": -46.664719,
+      "photos": 6,
+      "video_url": null,
+      "tour_url": "https://tour3d.piperz.io/z2iEoepSdrp",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "zeit-brooklin-residencial-brooklin-paulista-apartamentos",
+      "title": "Zeit Brooklin - Residencial | Apartamentos em Brooklin Paulista com mobilidade e lazer",
+      "address": "Rua Francisco Dias Velho em Brooklin Paulista - São Paulo/SP",
+      "latitude": -23.621316,
+      "longitude": -46.684456,
+      "photos": 17,
+      "video_url": "https://www.youtube.com/watch?v=AtYiS8k7l8Y",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "bueno-ipiranga-ipiranga-apartamentos",
+      "title": "Bueno Ipiranga | Apartamentos em Ipiranga com ótima oportunidade",
+      "address": "Rua Silva Bueno em Ipiranga - São Paulo/SP",
+      "latitude": -23.589817,
+      "longitude": -46.601589,
+      "photos": 34,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "hub-brooklin-by-ez-residencial-santo-amaro-apartamentos",
+      "title": "Hub Brooklin by EZ - Residencial | Apartamentos em Santo Amaro para morar ou investir",
+      "address": "Rua do Estilo Barroco em Santo Amaro - São Paulo/SP",
+      "latitude": -23.629983,
+      "longitude": -46.691636,
+      "photos": 26,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "quadra-vila-mascote-vila-mascote-apartamentos",
+      "title": "Quadra Vila Mascote | Apartamentos em Vila Mascote para morar ou investir",
+      "address": "Rua Doutor Djalma Pinheiro Franco em Vila Mascote - São Paulo/SP",
+      "latitude": -23.6544,
+      "longitude": -46.666801,
+      "photos": 52,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vista-jardim-guedala-nr-jardim-guedala-apartamentos",
+      "title": "Vista Jardim Guedala - NR | Apartamentos em Jardim Guedala com ótima oportunidade",
+      "address": "Rua Salim Izar em Jardim Guedala - São Paulo/SP",
+      "latitude": -23.589791,
+      "longitude": -46.720777,
+      "photos": 8,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vista-jardim-guedala-residencial-jardim-guedala-apartamentos",
+      "title": "Vista Jardim Guedala - Residencial | Apartamentos em Jardim Guedala para morar ou investir",
+      "address": "Rua Salim Izar em Jardim Guedala - São Paulo/SP",
+      "latitude": -23.589791,
+      "longitude": -46.720777,
+      "photos": 26,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "nurban-vila-clementino-residencial-vila-clementino-apartamentos",
+      "title": "Nurban Vila Clementino - Residencial | Apartamentos em Vila Clementino para morar ou investir",
+      "address": "Rua Doutor Diogo de Faria em Vila Clementino - São Paulo/SP",
+      "latitude": -23.595803,
+      "longitude": -46.640889,
+      "photos": 9,
+      "video_url": "https://www.youtube.com/watch?v=Qy9LUNjbwVs",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "j329-itaim-nr-itaim-bibi-apartamentos",
+      "title": "J329 Itaim - NR | Apartamentos em Itaim Bibi para morar ou investir",
+      "address": "Rua Joaquim Floriano em Itaim Bibi - São Paulo/SP",
+      "latitude": -23.584614,
+      "longitude": -46.673137,
+      "photos": 8,
+      "video_url": null,
+      "tour_url": "https://conteudo.benx.com.br/_vistas/j329itaim/",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vista-jardim-guedala-studios-jardim-guedala-studios",
+      "title": "Vista Jardim Guedala - Studios | Studios em Jardim Guedala com ótima oportunidade",
+      "address": "Rua Salim Izar em Jardim Guedala - São Paulo/SP",
+      "latitude": -23.589791,
+      "longitude": -46.720777,
+      "photos": 8,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "mix-ipiranga-nr-ipiranga-apartamentos",
+      "title": "Mix Ipiranga - NR | Apartamentos em Ipiranga com ótima oportunidade",
+      "address": "Rua do Lago em Ipiranga - São Paulo/SP",
+      "latitude": -23.604576,
+      "longitude": -46.60543,
+      "photos": 15,
+      "video_url": null,
+      "tour_url": "https://maskan.com.br/mix/index.html",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "my-life-vergueiro-ipiranga-apartamentos",
+      "title": "My Life Vergueiro | Apartamentos em Ipiranga para morar ou investir",
+      "address": "Rua Vergueiro em Ipiranga - São Paulo/SP",
+      "latitude": -23.60906,
+      "longitude": -46.61227,
+      "photos": 10,
+      "video_url": null,
+      "tour_url": "https://maskan.com.br/mylife/index.html",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "kza-ibirapuera-vila-mariana-apartamentos",
+      "title": "KZA Ibirapuera | Apartamentos em Vila Mariana com mobilidade e lazer",
+      "address": "Avenida Conselheiro Rodrigues Alves em Vila Mariana - São Paulo/SP",
+      "latitude": -23.58762,
+      "longitude": -46.648067,
+      "photos": 14,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "nurban-ibirapuera-residencial-vila-clementino-apartamentos",
+      "title": "Nurban Ibirapuera - Residencial | Apartamentos em Vila Clementino para morar ou investir",
+      "address": "Rua Doutor Afonso Baccari em Vila Clementino - São Paulo/SP",
+      "latitude": -23.600333,
+      "longitude": -46.649218,
+      "photos": 12,
+      "video_url": "https://www.youtube.com/watch?v=0hMQDYrtsCM",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vivaz-estacao-santo-amaro-socorro-apartamentos",
+      "title": "Vivaz Estação Santo Amaro | Apartamentos em Socorro com ótima oportunidade",
+      "address": "Rua Lagrange em Socorro - São Paulo/SP",
+      "latitude": -23.662898,
+      "longitude": -46.719209,
+      "photos": 22,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "sofia-campo-belo-parque-colonial-apartamentos",
+      "title": "Sofia Campo Belo | Apartamentos premium no Parque Colonial",
+      "address": "Rua Zacarias de Gois em Parque Colonial - São Paulo/SP",
+      "latitude": -23.625641,
+      "longitude": -46.674099,
+      "photos": 32,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "housi-brooklin-nr-brooklin-paulista-apartamentos",
+      "title": "Housi Brooklin - NR | Apartamentos em Brooklin Paulista com mobilidade e lazer",
+      "address": "Rua Getúlio Soares da Rocha em Brooklin Paulista - São Paulo/SP",
+      "latitude": -23.624773,
+      "longitude": -46.689663,
+      "photos": 14,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "bosque-ipiranga-residencial-fase-2-ipiranga-apartamentos",
+      "title": "Bosque Ipiranga - Residencial - Fase 2 | Apartamentos em Ipiranga com ótima oportunidade",
+      "address": "Avenida Presidente Wilson em Ipiranga - São Paulo/SP",
+      "latitude": -23.599147,
+      "longitude": -46.585624,
+      "photos": 20,
+      "video_url": null,
+      "tour_url": "https://bosqueipiranga.com.br/parceiros/",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "exclusiv-vila-mariana-vila-mariana-apartamentos",
+      "title": "Exclusiv Vila Mariana | Apartamentos em Vila Mariana com mobilidade e lazer",
+      "address": "Rua Madre Cabrini em Vila Mariana - São Paulo/SP",
+      "latitude": -23.590775,
+      "longitude": -46.636597,
+      "photos": 19,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "bosque-ipiranga-residencial-fase-1-ipiranga-apartamentos",
+      "title": "Bosque Ipiranga - Residencial - Fase 1 | Apartamentos em Ipiranga com ótima oportunidade",
+      "address": "Avenida Presidente Wilson em Ipiranga - São Paulo/SP",
+      "latitude": -23.599166,
+      "longitude": -46.585611,
+      "photos": 20,
+      "video_url": null,
+      "tour_url": "https://bosqueipiranga.com.br/parceiros/",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "walkbittencourt-nr-vila-clementino-apartamentos",
+      "title": "WALKBITTENCOURT - NR | Apartamentos em Vila Clementino para morar ou investir",
+      "address": "Rua Machado Bittencourt em Vila Clementino - São Paulo/SP",
+      "latitude": -23.597821,
+      "longitude": -46.638612,
+      "photos": 10,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "metrocasa-ipiranga-ii-nr-ipiranga-apartamentos",
+      "title": "Metrocasa Ipiranga II - NR | Apartamentos em Ipiranga com ótima oportunidade",
+      "address": "Rua Padre Francisco Xavier Roser em Ipiranga - São Paulo/SP",
+      "latitude": -23.602793,
+      "longitude": -46.607398,
+      "photos": 13,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "residence-unik-residencial-vila-firmiano-pinto-apartamentos",
+      "title": "Residence Unik - Residencial | Apartamentos em Vila Firmiano Pinto para morar ou investir",
+      "address": "Rua Adib Miguel Haddad em Vila Firmiano Pinto - São Paulo/SP",
+      "latitude": -23.599305,
+      "longitude": -46.619691,
+      "photos": 31,
+      "video_url": null,
+      "tour_url": "https://my.matterport.com/show/?m=i8WZfLr1t63&play=1&title=1",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "walkbittencourt-residencial-vila-clementino-apartamentos",
+      "title": "WALKBITTENCOURT - Residencial | Apartamentos em Vila Clementino para morar ou investir",
+      "address": "Rua Machado Bittencourt em Vila Clementino - São Paulo/SP",
+      "latitude": -23.597821,
+      "longitude": -46.638612,
+      "photos": 17,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "soft-clementino-vila-mariana-apartamentos",
+      "title": "Soft Clementino | Apartamentos em Vila Mariana com ótima oportunidade",
+      "address": "Rua Marselhesa em Vila Mariana - São Paulo/SP",
+      "latitude": -23.594344,
+      "longitude": -46.640724,
+      "photos": 17,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "on-paulista-residencial-vila-mariana-apartamentos",
+      "title": "ON Paulista - Residencial | Apartamentos em Vila Mariana com mobilidade e lazer",
+      "address": "Avenida Bernardino de Campos em Vila Mariana - São Paulo/SP",
+      "latitude": -23.576097,
+      "longitude": -46.641399,
+      "photos": 15,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "casa-jardim-laplace-campo-belo-casas",
+      "title": "Casa Jardim Laplace | Casas premium no Campo Belo",
+      "address": "Rua Laplace em Campo Belo - São Paulo/SP",
+      "latitude": -23.6269,
+      "longitude": -46.68261,
+      "photos": 16,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "cidade-parque-guarapiranga-condominio-atlantica-socorro-apartamentos",
+      "title": "Cidade Parque Guarapiranga Condomínio Atlântica | Apartamentos em Socorro com ótima oportunidade",
+      "address": "Rua Olívia Guedes Penteado em Socorro - São Paulo/SP",
+      "latitude": -23.673584,
+      "longitude": -46.70947,
+      "photos": 27,
+      "video_url": "https://www.youtube.com/watch?v=PWKIU_mAMYc",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "next-home-design-vila-nova-conceicao-apartamentos",
+      "title": "Next Home Design | Apartamentos em Vila Nova Conceição para morar ou investir",
+      "address": "Rua Bueno Brandão em Vila Nova Conceição - São Paulo/SP",
+      "latitude": -23.590219,
+      "longitude": -46.671196,
+      "photos": 17,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vinx-jurubatuba-home-resort-fase-1-jurubatuba-apartamentos",
+      "title": "Vinx Jurubatuba Home Resort - Fase 1 | Apartamentos em Jurubatuba com ótima oportunidade",
+      "address": "Avenida Engenheiro Eusébio Stevaux em Jurubatuba - São Paulo/SP",
+      "latitude": -23.675825,
+      "longitude": -46.695974,
+      "photos": 9,
+      "video_url": "https://www.youtube.com/watch?v=Trur2-FRU2g",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "casa-jardim-itavera-cidade-jardim-casas",
+      "title": "Casa Jardim Itaverá | Casas premium no Cidade Jardim",
+      "address": "Rua Itavera em Cidade Jardim - São Paulo/SP",
+      "latitude": -23.584612,
+      "longitude": -46.702538,
+      "photos": 19,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vinx-jurubatuba-home-resort-fase-3-jurubatuba-apartamentos",
+      "title": "Vinx Jurubatuba Home Resort - Fase 3 | Apartamentos em Jurubatuba com ótima oportunidade",
+      "address": "Avenida Engenheiro Eusébio Stevaux em Jurubatuba - São Paulo/SP",
+      "latitude": -23.675825,
+      "longitude": -46.695974,
+      "photos": 24,
+      "video_url": "https://www.youtube.com/watch?v=Trur2-FRU2g",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "casa-jardim-teviot-vila-nova-conceicao-casas",
+      "title": "Casa Jardim Teviot | Casas premium no Vila Nova Conceição",
+      "address": "Rua Teviot em Vila Nova Conceição - São Paulo/SP",
+      "latitude": -23.586647,
+      "longitude": -46.668845,
+      "photos": 12,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "next-vila-nova-vila-nova-conceicao-apartamentos",
+      "title": "Next Vila Nova | Apartamentos em Vila Nova Conceição para morar ou investir",
+      "address": "Rua Jacques Felix em Vila Nova Conceição - São Paulo/SP",
+      "latitude": -23.593575,
+      "longitude": -46.671532,
+      "photos": 10,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vinx-jurubatuba-home-resort-fase-2-jurubatuba-apartamentos",
+      "title": "Vinx Jurubatuba Home Resort - Fase 2 | Apartamentos em Jurubatuba com ótima oportunidade",
+      "address": "Avenida Engenheiro Eusébio Stevaux em Jurubatuba - São Paulo/SP",
+      "latitude": -23.675825,
+      "longitude": -46.695974,
+      "photos": 24,
+      "video_url": "https://www.youtube.com/watch?v=Trur2-FRU2g",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "nhambi-moema-moema-apartamentos",
+      "title": "Nhambi Moema | Apartamentos premium no Moema",
+      "address": "Alameda dos Nhambiquaras em Moema - São Paulo/SP",
+      "latitude": -23.610289,
+      "longitude": -46.662316,
+      "photos": 14,
+      "video_url": null,
+      "tour_url": "https://nhambi.touchapp.com.br/",
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "nurban-vila-mariana-nr-vila-mariana-apartamentos",
+      "title": "Nurban Vila Mariana - NR | Apartamentos em Vila Mariana com mobilidade e lazer",
+      "address": "Rua Dona Júlia em Vila Mariana - São Paulo/SP",
+      "latitude": -23.58859,
+      "longitude": -46.635221,
+      "photos": 11,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "stella-marina-residencial-brooklin-paulista-apartamentos",
+      "title": "Stella Marina - Residencial | Apartamentos em Brooklin Paulista com mobilidade e lazer",
+      "address": "Rua Stela Marina em Brooklin Paulista - São Paulo/SP",
+      "latitude": -23.609674,
+      "longitude": -46.676381,
+      "photos": 16,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "stella-marina-nr-brooklin-paulista-apartamentos",
+      "title": "Stella Marina - NR | Apartamentos em Brooklin Paulista com mobilidade e lazer",
+      "address": "Rua Stela Marina em Brooklin Paulista - São Paulo/SP",
+      "latitude": -23.609674,
+      "longitude": -46.676381,
+      "photos": 10,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "guest-saude-saude-apartamentos",
+      "title": "Guest Saúde | Apartamentos em Saúde para morar ou investir",
+      "address": "Rua Itapiru em Saúde - São Paulo/SP",
+      "latitude": -23.61557,
+      "longitude": -46.635372,
+      "photos": 12,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "top-campo-limpo-fase-1-campo-limpo-apartamentos",
+      "title": "Top Campo Limpo - Fase 1 | Apartamentos em Campo Limpo com ótima oportunidade",
+      "address": "Estrada de Itapecerica em Campo Limpo - São Paulo/SP",
+      "latitude": -23.655007,
+      "longitude": -46.762812,
+      "photos": 19,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "top-campo-limpo-fase-2-campo-limpo-apartamentos",
+      "title": "Top Campo Limpo - Fase 2 | Apartamentos em Campo Limpo com ótima oportunidade",
+      "address": "Estrada de Itapecerica em Campo Limpo - São Paulo/SP",
+      "latitude": -23.655007,
+      "longitude": -46.762812,
+      "photos": 20,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "doc-vila-nova-conceicao-vila-nova-conceicao-apartamentos",
+      "title": "DOC Vila Nova Conceição | Apartamentos premium no Vila Nova Conceição",
+      "address": "Rua Afonso Braz em Vila Nova Conceição - São Paulo/SP",
+      "latitude": -23.595196,
+      "longitude": -46.669144,
+      "photos": 23,
+      "video_url": "https://www.youtube.com/watch?v=QptixBQO7iU",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "vp-moema-moema-apartamentos",
+      "title": "VP Moema | Apartamentos em Moema para morar ou investir",
+      "address": "Avenida Lavandisca em Moema - São Paulo/SP",
+      "latitude": -23.601599,
+      "longitude": -46.665274,
+      "photos": 25,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "manhattan-morumbi-apartamentos",
+      "title": "Manhattan | Apartamentos premium no Morumbi",
+      "address": "Avenida Morumbi em Morumbi - São Paulo/SP",
+      "latitude": -23.592275,
+      "longitude": -46.706189,
+      "photos": 10,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "the-club-live-work-play-lofts-jardim-guedala-apartamentos",
+      "title": "The Club - Live, Work & Play - Lofts | Apartamentos em Jardim Guedala para morar ou investir",
+      "address": "Rua Padre Eugênio Lopes em Jardim Guedala - São Paulo/SP",
+      "latitude": -23.584556,
+      "longitude": -46.716614,
+      "photos": 15,
+      "video_url": "https://www.youtube.com/watch?v=OFMoZ9MsPGk",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "the-club-live-work-play-jardim-guedala-apartamentos",
+      "title": "The Club - Live, Work & Play | Apartamentos premium no Jardim Guedala",
+      "address": "Rua Padre Eugênio Lopes em Jardim Guedala - São Paulo/SP",
+      "latitude": -23.584556,
+      "longitude": -46.716614,
+      "photos": 32,
+      "video_url": "https://www.youtube.com/watch?v=OFMoZ9MsPGk",
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    },
+    {
+      "slug": "casa-arbo-jardim-guedala-casas",
+      "title": "Casa Arbo | Casas premium no Jardim Guedala",
+      "address": "Rua José Jannarelli em Jardim Guedala - São Paulo/SP",
+      "latitude": -23.590355,
+      "longitude": -46.716673,
+      "photos": 37,
+      "video_url": null,
+      "tour_url": null,
+      "checks": {
+        "public_available": true,
+        "slug_valid": true,
+        "coordinates": true,
+        "numberless_address": true,
+        "bold_name": true,
+        "photos": true
+      }
+    }
+  ]
+}
