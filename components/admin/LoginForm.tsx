@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { getAuthErrorMessage } from "@/lib/admin/auth-error-message";
 import { createSupabaseClient } from "@/lib/supabase/client";
 
 export function LoginForm() {
@@ -51,7 +53,7 @@ export function LoginForm() {
 
     setLoading(false);
     if (signInError) {
-      setError(signInError.message);
+      setError(getAuthErrorMessage(signInError, "Não foi possível entrar. Verifique seus dados e tente novamente."));
       return;
     }
 
@@ -82,9 +84,20 @@ export function LoginForm() {
       <p className="text-xs font-black uppercase tracking-[0.22em] text-brand">Area administrativa</p>
       <h1 className="mt-2 text-3xl font-black">Entrar no RC Vend</h1>
       <div className="mt-6 grid gap-4">
-        <input name="email" type="email" required placeholder="E-mail" className="rounded-2xl border border-line px-4 py-3 outline-none focus:border-brand" />
-        <input name="password" type="password" required placeholder="Senha" className="rounded-2xl border border-line px-4 py-3 outline-none focus:border-brand" />
-        <button disabled={loading} className="rounded-2xl bg-brand px-5 py-4 font-black text-white hover:bg-brand-strong disabled:opacity-60">
+        <label className="grid gap-2 text-sm font-bold" htmlFor="email">
+          E-mail
+          <input id="email" name="email" type="email" autoComplete="email" required placeholder="seu@email.com" className="rounded-2xl border border-line px-4 py-3 font-normal outline-none focus:border-brand" />
+        </label>
+        <label className="grid gap-2 text-sm font-bold" htmlFor="password">
+          Senha
+          <input id="password" name="password" type="password" autoComplete="current-password" required placeholder="Sua senha" className="rounded-2xl border border-line px-4 py-3 font-normal outline-none focus:border-brand" />
+        </label>
+        <div className="-mt-1 text-right">
+          <Link href="/admin/esqueci-senha" className="text-sm font-bold text-brand underline-offset-4 hover:underline">
+            Esqueci minha senha
+          </Link>
+        </div>
+        <button type="submit" disabled={loading} className="rounded-2xl bg-brand px-5 py-4 font-black text-white hover:bg-brand-strong disabled:cursor-not-allowed disabled:opacity-60">
           {loading ? "Entrando..." : "Entrar"}
         </button>
         {!process.env.NEXT_PUBLIC_SUPABASE_URL && (
@@ -92,7 +105,7 @@ export function LoginForm() {
             Acesso local ativo. Use as credenciais configuradas neste computador.
           </p>
         )}
-        {error && <p className="rounded-2xl border border-red-200 bg-red-50 p-3 text-sm font-semibold text-red-700">{error}</p>}
+        {error && <p role="alert" aria-live="polite" className="rounded-2xl border border-red-200 bg-red-50 p-3 text-sm font-semibold text-red-700">{error}</p>}
       </div>
     </form>
   );

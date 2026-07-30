@@ -13061,252 +13061,6 @@
     "is_launch": false
   },
   {
-    "id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-    "organization_id": "992e1d22-bdee-4b85-b02a-2c8c14f4a2a4",
-    "agent_id": null,
-    "developer_id": null,
-    "neighborhood_id": "30000000-0000-0000-0000-000000000001",
-    "title": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-    "slug": "studio-a-venda-no-brooklin-no-zip-brooklin-a-partir-de-r-299-mil",
-    "description": "<p>Studio à venda no Brooklin no empreendimento Zip Brooklin, ideal para investimento ou moradia, com lazer completo e excelente custo-benefício. Unidades a partir de R$ 299 mil, em uma das regiões mais estratégicas e valorizadas da Zona Sul de São Paulo.</p><p>O<strong> Zip Brooklin </strong>combina praticidade, mobilidade e infraestrutura moderna, oferecendo um projeto inteligente para quem busca rentabilidade com locação ou um imóvel compacto em localização premium.</p><h3><br><strong>Localização Estratégica – Brooklin</strong></h3><ul><li><p>Localizado na Av. Chucri Zaidan, o empreendimento está em uma das áreas mais conectadas da cidade:</p></li><li><p>Próximo a shoppings centers</p></li><li><p>A menos de 5 minutos a pé da Estação Morumbi (CPTM) e do monotrilho</p></li><li><p>Fácil acesso à Marginal Pinheiros, Berrini e Santo Amaro</p></li></ul><h3><strong>Lazer e Serviços do Condomínio</strong></h3><p>Infraestrutura completa para o dia a dia e momentos de lazer:</p><ul><li><p>Boulevard interno</p></li><li><p>Salão de festas com coworking</p></li><li><p>Salão gourmet</p></li><li><p>Coworking com espaço de descompressão</p></li><li><p>Fitness indoor e outdoor</p></li><li><p>Mini mercado</p></li><li><p>Piscina com deck molhado, spa e solarium</p></li><li><p>Salão de jogos e bar</p></li><li><p>Lavanderias compartilhadas</p></li><li><p>Áreas com churrasqueira</p></li><li><p>Pet place</p></li><li><p>Roof garden</p></li><li><p>Bicicletário com mini oficina</p></li></ul><p><strong>Aqui você tem:</strong></p><ul><li><p>Corretor credenciado pela construtora</p></li><li><p>Compra direta com a incorporadora</p></li><li><p>Sem custo adicional para você</p></li><li><p>Atendimento oficial e personalizado</p></li></ul><p>Entre em contato com <strong>Fernandes da Yuny </strong>para mais informações e agende sua visita. Compre diretamente com a construtora, sem custo adicional..</p><p></p>",
-    "purpose": "sale",
-    "type": "apartment",
-    "status": "available",
-    "approval_status": "approved",
-    "price": 299000,
-    "condo_fee": null,
-    "iptu": null,
-    "area": 25,
-    "bedrooms": 1,
-    "bathrooms": 1,
-    "suites": 0,
-    "parking_spaces": 0,
-    "address": "Av. Chucri Zaidan, 111",
-    "address_number": null,
-    "complement": null,
-    "city": "Sao Paulo",
-    "state": "SP",
-    "latitude": -23.6200242,
-    "longitude": -46.6981345,
-    "cover_image": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559916562-q0nz0pxq7k.jpg",
-    "characteristics": [
-      "Piscina adulto",
-      "Academia",
-      "Espaço Gourmet",
-      "Espaço Pet",
-      "Piscina infantil",
-      "Salão de Festas",
-      "Coworking",
-      "Sala de Jogos",
-      "Churrasqueira",
-      "Lazer no Rooftop",
-      "Últimas unidades",
-      "Do lado do Shopping Morumbi",
-      "Há 5 minutos a pé da estação Morumbi Claro",
-      "rooftop",
-      "pet friendly",
-      "coworking"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "meta_title": "Apartamento à venda no Brooklin – Studio à venda no Brook... | 30 m²",
-    "meta_description": "Apartamento à venda no Brooklin, no Studio à venda no Brooklin no Zip Brooklin a partir de R$ 370 mil, com 1 quartos e 1 banheir.... Ótima opção em Brooklin.",
-    "created_at": "2026-04-29T23:57:47.283911+00:00",
-    "updated_at": "2026-07-17T13:38:23.525779+00:00",
-    "code": "VM-000022",
-    "video_url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/videos/1781269468889-pn4jowsuhh.mp4",
-    "tour_url": null,
-    "property_stage": "ready",
-    "neighborhood": "Brooklin",
-    "images": [
-      {
-        "id": "6fc9f939-cefc-4bb9-98b7-40f37c739643",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559916562-q0nz0pxq7k.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 0,
-        "is_cover": true
-      },
-      {
-        "id": "9840f83d-913d-40f5-a8fe-97198ba3de64",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559916563-l9cxeombbsr.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 1,
-        "is_cover": false
-      },
-      {
-        "id": "ecae367b-9055-462e-a32b-5d89e15200b0",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559916563-302g0g1lff3.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 2,
-        "is_cover": false
-      },
-      {
-        "id": "5fcc3283-552c-4123-abd8-00cc2d2ee476",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559916563-xj1zvdpbefc.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 3,
-        "is_cover": false
-      },
-      {
-        "id": "a96c99b6-dd9e-4fa2-90b0-cd55f14343f6",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559916563-n5xogmmtd7m.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 4,
-        "is_cover": false
-      },
-      {
-        "id": "29e3018c-95d5-4d04-8025-4dc2712d186f",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917279-xcyjt3c7txd.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 5,
-        "is_cover": false
-      },
-      {
-        "id": "4d7a4943-ddbd-4d5c-b779-098080ace82b",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917279-dy9aljjdl5t.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 6,
-        "is_cover": false
-      },
-      {
-        "id": "ce1c2eba-8dbc-4648-acab-7d6ca8aa323b",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917279-upexok504k7.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 7,
-        "is_cover": false
-      },
-      {
-        "id": "7c13d6ed-5a27-4945-a3df-10680d78a5ee",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917279-xx2eq38npts.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 8,
-        "is_cover": false
-      },
-      {
-        "id": "e1ab0281-dd0d-4d12-8aa9-d761d4966da3",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917279-ge9qafkh6yc.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 9,
-        "is_cover": false
-      },
-      {
-        "id": "664d8e92-7080-45f4-a0f5-66d08627835c",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917693-93nwwrk10fm.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 10,
-        "is_cover": false
-      },
-      {
-        "id": "4f322a2b-f731-4ce4-a5c9-4e30949053a0",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917693-ip5s46gxklk.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 11,
-        "is_cover": false
-      },
-      {
-        "id": "90041561-9b6b-418d-9b0c-04887668e3ee",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917693-h2bab26c1o.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 12,
-        "is_cover": false
-      },
-      {
-        "id": "fd0d9f86-7a8a-4f7c-a7df-c3a74ab4b8f2",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917693-g1qrtedunmg.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 13,
-        "is_cover": false
-      },
-      {
-        "id": "d6a33efb-ae43-4581-8773-55a4b7441be1",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777559917693-4gyti8afd5i.jpg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 14,
-        "is_cover": false
-      },
-      {
-        "id": "c579780e-5db4-41fe-954c-2d824c0f695c",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/properties/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1779797904056-7vpjp3wv3vi.jpeg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 19,
-        "is_cover": false
-      },
-      {
-        "id": "4f9dad5f-7bb1-42d4-bc29-cb317c075dbb",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/properties/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1779797904057-cil21m3azr.jpeg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 20,
-        "is_cover": false
-      },
-      {
-        "id": "630b5c50-df8d-48b0-9e1d-1be5945b9c75",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/properties/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1779797904057-2sgucgz6f1y.jpeg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 21,
-        "is_cover": false
-      },
-      {
-        "id": "c8ac90c4-fd42-4586-b343-d1ff2d728cc5",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/properties/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1779797904057-mfbf8u88wf.jpeg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 22,
-        "is_cover": false
-      },
-      {
-        "id": "993cd3ea-c1e0-4c73-8053-9070fb92cb1d",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/properties/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1779797904058-l8s0pwwvtyq.jpeg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 23,
-        "is_cover": false
-      },
-      {
-        "id": "4665016b-7a7a-452b-a861-026f7ea171f2",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/properties/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1779797904058-8jq5njbriz8.jpeg",
-        "alt": "Studio à venda no Brooklin no Zip Brooklin a partir de R$ 299 mil",
-        "sort_order": 24,
-        "is_cover": false
-      }
-    ],
-    "floor_plans": [
-      {
-        "id": "2ef6a5ea-0e1c-440e-8e76-aa2e668725bd",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777663118421-nwjvrxve8p.jpg",
-        "title": "Planta 1",
-        "sort_order": 0
-      },
-      {
-        "id": "40ec2b55-4380-4c7b-b8df-9544b287b673",
-        "property_id": "257dc41c-21ce-4b44-89a6-26b3ffc23217",
-        "url": "https://gtfdrselcbogwzkrnqmg.supabase.co/storage/v1/object/public/property-images/a27ace0c-7e9d-40d8-9ee3-32b27373b73d/1777663118423-lvuctb4jge.jpg",
-        "title": "Planta 2",
-        "sort_order": 1
-      }
-    ],
-    "is_launch": false
-  },
-  {
     "id": "25eeccac-2e9f-43dc-9e82-b243ba3cda8f",
     "organization_id": "992e1d22-bdee-4b85-b02a-2c8c14f4a2a4",
     "agent_id": null,
@@ -21444,124 +21198,6 @@
         "property_id": "40000000-0000-0000-0000-000000000002",
         "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
         "alt": "Apartamento em Moema com varanda",
-        "sort_order": 0,
-        "is_cover": true
-      }
-    ],
-    "floor_plans": [],
-    "is_launch": false
-  },
-  {
-    "id": "40000000-0000-0000-0000-000000000003",
-    "organization_id": "20000000-0000-0000-0000-000000000001",
-    "agent_id": null,
-    "developer_id": "10000000-0000-0000-0000-000000000001",
-    "neighborhood_id": "30000000-0000-0000-0000-000000000003",
-    "title": "Lancamento na Vila Mariana",
-    "slug": "lancamento-na-vila-mariana",
-    "description": "Projeto contemporaneo com plantas versateis, lazer completo e acesso rapido aos principais eixos da cidade.",
-    "purpose": "launch",
-    "type": "apartment",
-    "status": "available",
-    "approval_status": "approved",
-    "price": 690000,
-    "condo_fee": 720,
-    "iptu": 220,
-    "area": 48,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "suites": 1,
-    "parking_spaces": 1,
-    "address": "Vila Mariana, Sao Paulo",
-    "address_number": null,
-    "complement": null,
-    "city": "Sao Paulo",
-    "state": "SP",
-    "latitude": -23.5892,
-    "longitude": -46.6346,
-    "cover_image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
-    "characteristics": [
-      "Lancamento",
-      "Lazer completo",
-      "Perto do metro",
-      "Entrega futura"
-    ],
-    "is_featured": true,
-    "is_active": true,
-    "meta_title": "Lancamento na Vila Mariana",
-    "meta_description": "Lancamento na Vila Mariana com tecnologia Vision Mobia.",
-    "created_at": "2026-06-16T12:38:08.348432+00:00",
-    "updated_at": "2026-07-17T13:38:23.525779+00:00",
-    "code": "VM-000003",
-    "video_url": null,
-    "tour_url": null,
-    "property_stage": "launch",
-    "neighborhood": "Vila Mariana",
-    "images": [
-      {
-        "id": "ba05fdfe-36ff-413b-8ad3-e20f6d991928",
-        "property_id": "40000000-0000-0000-0000-000000000003",
-        "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
-        "alt": "Lancamento na Vila Mariana",
-        "sort_order": 0,
-        "is_cover": true
-      }
-    ],
-    "floor_plans": [],
-    "is_launch": true
-  },
-  {
-    "id": "40000000-0000-0000-0000-000000000004",
-    "organization_id": "20000000-0000-0000-0000-000000000001",
-    "agent_id": null,
-    "developer_id": "10000000-0000-0000-0000-000000000002",
-    "neighborhood_id": "30000000-0000-0000-0000-000000000004",
-    "title": "Apartamento no Paraiso perto da Paulista",
-    "slug": "apartamento-no-paraiso-perto-da-paulista",
-    "description": "Endereco estrategico para quem busca mobilidade, servicos e vida urbana com conforto.",
-    "purpose": "rent",
-    "type": "apartment",
-    "status": "available",
-    "approval_status": "approved",
-    "price": 5200,
-    "condo_fee": 950,
-    "iptu": 250,
-    "area": 64,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "suites": 1,
-    "parking_spaces": 1,
-    "address": "Paraiso, Sao Paulo",
-    "address_number": null,
-    "complement": null,
-    "city": "Sao Paulo",
-    "state": "SP",
-    "latitude": -23.5746,
-    "longitude": -46.6417,
-    "cover_image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-    "characteristics": [
-      "Pronto",
-      "Metro proximo",
-      "Varanda",
-      "1 vaga"
-    ],
-    "is_featured": false,
-    "is_active": true,
-    "meta_title": "Apartamento para alugar no Paraiso",
-    "meta_description": "Apartamento no Paraiso perto da Paulista.",
-    "created_at": "2026-06-16T12:38:08.348432+00:00",
-    "updated_at": "2026-07-17T13:38:23.525779+00:00",
-    "code": "VM-000004",
-    "video_url": null,
-    "tour_url": null,
-    "property_stage": "ready",
-    "neighborhood": "Paraiso",
-    "images": [
-      {
-        "id": "02867d51-d003-4695-9798-1767a12de265",
-        "property_id": "40000000-0000-0000-0000-000000000004",
-        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-        "alt": "Apartamento no Paraiso perto da Paulista",
         "sort_order": 0,
         "is_cover": true
       }
@@ -92895,5 +92531,302 @@
     ],
     "floor_plans": [],
     "is_launch": false
+  },
+  {
+    "id": "196ffe4d-172f-46e3-a877-805dc699411d",
+    "organization_id": "992e1d22-bdee-4b85-b02a-2c8c14f4a2a4",
+    "agent_id": null,
+    "developer_id": null,
+    "neighborhood_id": null,
+    "title": "Quaddra Lorena | Apartamentos de alto padrão nos Jardins",
+    "slug": "quaddra-lorena-jardim-paulista-apartamentos",
+    "description": "O <strong>Quaddra Lorena</strong> é um lançamento residencial de alto padrão na Alameda Lorena, 70, nos Jardins, a cerca de 800 metros do Parque Ibirapuera. Implantado em um terreno de aproximadamente 5.400 m², o projeto reúne três torres com térreo e 14 pavimentos.<br><br>As residências possuem opções de <strong>300 m² e 387 m²</strong>, com 3 ou 4 suítes, 4 vagas, depósito e espaço privativo. O empreendimento foi concebido para oferecer amplitude, privacidade e integração entre os ambientes.<br><br>O conceito <strong>High Wellness</strong> inclui quadra oficial de tênis de saibro, piscina coberta de 25 metros, piscina externa orgânica, Fitness Center by Technogym, Body Station, estúdio de Pilates, salas de massagem, hidromassagem, crioterapia, saunas seca e úmida e Beauty Hall. O condomínio também oferece espaços de convivência, lazer infantil, áreas gourmet e segurança.<br><br>A arquitetura é assinada por Aflalo &amp; Gasperini, com interiores da Soma Arquitetos e paisagismo de Guimattos. A incorporação é da Yuny, com participação da Melnick Partners.<br><br>Valor de referência a partir de R$ 10.098.000. Preço, disponibilidade, condições comerciais, metragens e características das unidades devem ser confirmados no atendimento.",
+    "purpose": "launch",
+    "type": "apartment",
+    "status": "available",
+    "approval_status": "approved",
+    "price": 10098000,
+    "condo_fee": null,
+    "iptu": null,
+    "area": 300,
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "suites": 4,
+    "parking_spaces": 4,
+    "address": "Alameda Lorena, 70 - Jardins, São Paulo - SP, 01424-000",
+    "address_number": "70",
+    "complement": null,
+    "city": "Sao Paulo",
+    "state": "SP",
+    "latitude": -23.5732216,
+    "longitude": -46.6559391,
+    "cover_image": "https://www.gvi.com.br/wp-content/uploads/2025/04/01_LOR_01_Fotomontagem_A_EF_V2.webp",
+    "characteristics": [
+      "Apartamentos de 300 m² e 387 m²",
+      "3 ou 4 suítes",
+      "4 vagas",
+      "Depósito privativo",
+      "Espaço privativo",
+      "Quadra oficial de tênis de saibro",
+      "Piscina coberta de 25 metros",
+      "Piscina externa orgânica",
+      "Fitness Center by Technogym",
+      "Body Station",
+      "Estúdio de Pilates",
+      "Salas de massagem",
+      "Hidromassagem",
+      "Crioterapia",
+      "Sauna seca",
+      "Sauna úmida",
+      "Beauty Hall",
+      "Espaço gourmet",
+      "Brinquedoteca",
+      "Playground",
+      "Segurança 24 horas",
+      "A 800 metros do Parque Ibirapuera"
+    ],
+    "is_featured": true,
+    "is_active": true,
+    "meta_title": "Quaddra Lorena | Apartamentos no Jardim Paulista",
+    "meta_description": "Conheça o Quaddra Lorena na Alameda Lorena, Jardins: apartamentos de 300 e 387 m², 3 ou 4 suítes, 4 vagas e conceito High Wellness.",
+    "created_at": "2026-07-30T12:00:00.000000-03:00",
+    "updated_at": "2026-07-30T12:00:00.000000-03:00",
+    "code": "VM-000431",
+    "video_url": "https://quaddralorena.com.br/wp-content/themes/quaddra-lorena/assets/imgs/video/background.mp4?v=1784253358",
+    "tour_url": "https://quaddra.touchapp.com.br/",
+    "developer": "Yuny",
+    "property_stage": "under_construction",
+    "neighborhood": "Jardim Paulista",
+    "images": [
+      {
+        "id": "9273bec7-6641-437c-b7ca-3c2bd9a57921",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/01_LOR_01_Fotomontagem_A_EF_V2.webp",
+        "alt": "Quaddra Lorena nos Jardins - perspectiva da fachada",
+        "sort_order": 0,
+        "is_cover": true
+      },
+      {
+        "id": "fc5dfbfe-9bd8-4962-8c76-f33890708bec",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/02_LOR_02_Fotomontagem_B_EF2.webp",
+        "alt": "Quaddra Lorena - implantação das três torres",
+        "sort_order": 1,
+        "is_cover": false
+      },
+      {
+        "id": "4855aae9-bea2-418f-b080-51362ca63f49",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC08870-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 1",
+        "sort_order": 2,
+        "is_cover": false
+      },
+      {
+        "id": "8ebed244-c2f7-4b54-b19f-3bd2590e4431",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC08891-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 2",
+        "sort_order": 3,
+        "is_cover": false
+      },
+      {
+        "id": "ea691d2d-1af5-4ff4-a685-b5ed7ddaa25c",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC08909-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 3",
+        "sort_order": 4,
+        "is_cover": false
+      },
+      {
+        "id": "a1d0fba6-76b9-4f6b-9ce1-7b85d56dd5db",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC08924-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 4",
+        "sort_order": 5,
+        "is_cover": false
+      },
+      {
+        "id": "1388cf24-ab9a-424d-b4f0-cb8a3c02b453",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC08930-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 5",
+        "sort_order": 6,
+        "is_cover": false
+      },
+      {
+        "id": "745e15ff-257b-4632-b697-35f8c1390190",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC08951-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 6",
+        "sort_order": 7,
+        "is_cover": false
+      },
+      {
+        "id": "62e34e16-c885-412d-ba5f-7357ec53d4e2",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC08954-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 7",
+        "sort_order": 8,
+        "is_cover": false
+      },
+      {
+        "id": "102d1bba-973d-4f1d-bac1-af584296f7ff",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC09029-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 8",
+        "sort_order": 9,
+        "is_cover": false
+      },
+      {
+        "id": "fe8ece6e-786f-4248-aa40-09893e6beef3",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC09032-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 9",
+        "sort_order": 10,
+        "is_cover": false
+      },
+      {
+        "id": "cc706d56-e32b-43a5-9f28-9947ca950a9f",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC09089-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 10",
+        "sort_order": 11,
+        "is_cover": false
+      },
+      {
+        "id": "b58d4625-d8ef-44e5-821b-cc14d49f144b",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC09107-HDR.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 11",
+        "sort_order": 12,
+        "is_cover": false
+      },
+      {
+        "id": "c578a0f3-3439-4177-8c0a-1c65a1ab2e80",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC09173.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 12",
+        "sort_order": 13,
+        "is_cover": false
+      },
+      {
+        "id": "31c03187-9b46-4c66-b1e5-89da17c9ab9f",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC09191.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 13",
+        "sort_order": 14,
+        "is_cover": false
+      },
+      {
+        "id": "c9b91a3b-8801-48fc-b08b-206156a40733",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/04/DSC09194.jpg",
+        "alt": "Quaddra Lorena - apartamento decorado, ambiente 14",
+        "sort_order": 15,
+        "is_cover": false
+      },
+      {
+        "id": "16211980-f725-44af-9d0d-791d0562e8e5",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://quaddralorena.com.br/wp-content/uploads/2026/06/07__pixel__Layer_1.webp",
+        "alt": "Quaddra Lorena - perspectiva das áreas comuns",
+        "sort_order": 16,
+        "is_cover": false
+      },
+      {
+        "id": "de160219-4cf9-4d61-99c4-ca84e577a359",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://quaddralorena.com.br/wp-content/uploads/2026/06/39__pixel__Layer_19.webp",
+        "alt": "Quaddra Lorena - área de lazer",
+        "sort_order": 17,
+        "is_cover": false
+      },
+      {
+        "id": "fa44c390-f94b-4dda-8089-6512677025f6",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://quaddralorena.com.br/wp-content/uploads/2026/06/44__pixel__Layer_8.webp",
+        "alt": "Quaddra Lorena - espaço wellness",
+        "sort_order": 18,
+        "is_cover": false
+      },
+      {
+        "id": "d0741820-0d6f-41ad-8166-0e9176800b79",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://quaddralorena.com.br/wp-content/uploads/2026/06/45__pixel__Layer_9.webp",
+        "alt": "Quaddra Lorena - espaço de convivência",
+        "sort_order": 19,
+        "is_cover": false
+      },
+      {
+        "id": "d71ebfc8-6039-42b0-8ac8-9402afaa8e8b",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://quaddralorena.com.br/wp-content/uploads/2026/06/46__pixel__Layer_10.webp",
+        "alt": "Quaddra Lorena - detalhe do projeto",
+        "sort_order": 20,
+        "is_cover": false
+      },
+      {
+        "id": "a21850f3-b77f-46e1-8c04-f266f5e4c265",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://quaddralorena.com.br/wp-content/uploads/2026/06/57__pixel__Layer_22.webp",
+        "alt": "Quaddra Lorena - lazer e paisagismo",
+        "sort_order": 21,
+        "is_cover": false
+      },
+      {
+        "id": "bfd0bb9b-8c85-45a5-ace8-7f09ef83905c",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://quaddralorena.com.br/wp-content/uploads/2026/06/66__pixel__Layer_20.webp",
+        "alt": "Quaddra Lorena - ambientes do empreendimento",
+        "sort_order": 22,
+        "is_cover": false
+      }
+    ],
+    "floor_plans": [
+      {
+        "id": "222fe08b-9e68-483c-bc1f-318fa74effe5",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/09/Prancheta-1.jpg",
+        "title": "Planta 1 - Quaddra Lorena",
+        "sort_order": 0
+      },
+      {
+        "id": "a15c1ca3-a6c7-4997-b9b2-16e185c29800",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/09/Prancheta-2.jpg",
+        "title": "Planta 2 - Quaddra Lorena",
+        "sort_order": 1
+      },
+      {
+        "id": "6b03e7a0-0b20-48d7-8bb4-6d6ec88cd702",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/09/Prancheta-3.jpg",
+        "title": "Planta 3 - Quaddra Lorena",
+        "sort_order": 2
+      },
+      {
+        "id": "b2a409dc-123a-420b-aa01-669c127d5cbf",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/09/Prancheta-4.jpg",
+        "title": "Planta 4 - Quaddra Lorena",
+        "sort_order": 3
+      },
+      {
+        "id": "b6d0e646-340d-4cfd-a2e7-b2e69dcc3ff8",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/09/Prancheta-5.jpg",
+        "title": "Planta 5 - Quaddra Lorena",
+        "sort_order": 4
+      },
+      {
+        "id": "ef42d499-a16f-43cb-bbe6-82c411ba32f5",
+        "property_id": "196ffe4d-172f-46e3-a877-805dc699411d",
+        "url": "https://www.gvi.com.br/wp-content/uploads/2025/09/Prancheta-6.jpg",
+        "title": "Planta 6 - Quaddra Lorena",
+        "sort_order": 5
+      }
+    ],
+    "is_launch": true
   }
 ]

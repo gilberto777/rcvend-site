@@ -197,7 +197,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
               <p className="flex items-center gap-2 font-black"><AlertCircle className="h-5 w-5 text-muted" />Encontrou algum problema neste anúncio?</p>
               <p className="mt-1 text-sm text-muted">Avise nossa equipe sobre informações incorretas ou indisponibilidade.</p>
             </div>
-            <a href={`mailto:contato@rcvend.com.br?subject=${encodeURIComponent(`Revisar anúncio ${property.code ?? property.slug}`)}`} className="shrink-0 rounded-full border border-line px-5 py-3 text-sm font-black text-brand transition hover:border-brand">Reportar anúncio</a>
+            <a href={`mailto:ralf.imoveis8@gmail.com?subject=${encodeURIComponent(`Revisar anúncio ${property.code ?? property.slug}`)}`} className="shrink-0 rounded-full border border-line px-5 py-3 text-sm font-black text-brand transition hover:border-brand">Reportar anúncio</a>
           </section>
 
           {related.length > 0 && (

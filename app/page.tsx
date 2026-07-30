@@ -4,9 +4,11 @@ import Link from "next/link";
 import { ArrowRight, Bot, Building2, CheckCircle2, LineChart, MapPinned, MessageCircle, Search, ShieldCheck, Sparkles } from "lucide-react";
 import { AiPreviewSection } from "@/components/home/AiPreviewSection";
 import { HeroSearch } from "@/components/home/HeroSearch";
+import { PromotionalBannerCarousel } from "@/components/home/PromotionalBannerCarousel";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { PropertyCard } from "@/components/property/PropertyCard";
+import { getActiveBanners } from "@/lib/banners";
 import { blogPosts } from "@/lib/blog-posts";
 import { getFeaturedProperties, getLaunches } from "@/lib/properties";
 import { getWhatsAppUrl } from "@/lib/formatters";
@@ -113,7 +115,11 @@ const faqItems = [
 ];
 
 export default async function Home() {
-  const [featured, launches] = await Promise.all([getFeaturedProperties(), getLaunches()]);
+  const [featured, launches, banners] = await Promise.all([
+    getFeaturedProperties(),
+    getLaunches(),
+    getActiveBanners(),
+  ]);
   const hasLaunchGrid = launches.length >= 3;
   const highlightedLaunch = launches[0];
 
@@ -168,6 +174,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      <PromotionalBannerCarousel banners={banners} />
 
       <section className="container-page py-12">
         <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">

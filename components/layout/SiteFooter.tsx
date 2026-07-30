@@ -67,7 +67,7 @@ export function SiteFooter() {
           <p className="mt-3 text-sm leading-6 text-white/68">
             rcvend.com.br
             <br />
-            contato@rcvend.com.br
+            ralf.imoveis8@gmail.com
             <br />
             Atendimento comercial via WhatsApp
           </p>

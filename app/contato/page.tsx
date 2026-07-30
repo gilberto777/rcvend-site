@@ -35,7 +35,7 @@ export default function ContactPage() {
           <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
             <Mail className="h-8 w-8 text-brand" />
             <h2 className="mt-4 text-xl font-black">E-mail</h2>
-            <p className="mt-2 leading-7 text-muted">contato@rcvend.com.br</p>
+            <p className="mt-2 leading-7 text-muted">ralf.imoveis8@gmail.com</p>
           </div>
           <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
             <MapPin className="h-8 w-8 text-brand" />

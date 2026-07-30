@@ -29,7 +29,7 @@ values (
   'agency',
   '11971157373',
   '11971157373',
-  'contato@rcvend.com.br',
+  'ralf.imoveis8@gmail.com',
   'Sao Paulo',
   'SP',
   'active'

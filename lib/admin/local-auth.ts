@@ -11,11 +11,20 @@ function hasSupabaseEnv() {
   );
 }
 
+function localAdminEmails() {
+  const primaryEmail = process.env.LOCAL_ADMIN_EMAIL ?? "";
+  const additionalEmails = process.env.LOCAL_ADMIN_ADDITIONAL_EMAILS ?? "";
+
+  return [primaryEmail, ...additionalEmails.split(",")]
+    .map((email) => email.trim().toLowerCase())
+    .filter(Boolean);
+}
+
 export function isLocalAdminEnabled() {
   return Boolean(
     process.env.NODE_ENV !== "production" &&
       !hasSupabaseEnv() &&
-      process.env.LOCAL_ADMIN_EMAIL &&
+      localAdminEmails().length > 0 &&
       process.env.LOCAL_ADMIN_PASSWORD &&
       process.env.LOCAL_ADMIN_SESSION_SECRET,
   );
@@ -43,8 +52,13 @@ function sessionValue() {
 export function validateLocalAdminCredentials(email: string, password: string) {
   if (!isLocalAdminEnabled()) return false;
 
+  const normalizedEmail = email.trim().toLowerCase();
+  const emailIsAllowed = localAdminEmails().some((allowedEmail) =>
+    safeEqual(normalizedEmail, allowedEmail),
+  );
+
   return (
-    safeEqual(email.trim().toLowerCase(), process.env.LOCAL_ADMIN_EMAIL!.trim().toLowerCase()) &&
+    emailIsAllowed &&
     safeEqual(password, process.env.LOCAL_ADMIN_PASSWORD!)
   );
 }

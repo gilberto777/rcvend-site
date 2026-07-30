@@ -1,7 +1,6 @@
 ﻿"use client";
 
 import { createSupabaseClient } from "@/lib/supabase/client";
-import { sampleProperties } from "@/lib/mock-data";
 import type { Lead, Property, PropertyFloorPlan, PropertyImage } from "@/types/property";
 
 type SupabasePropertyImage = {
@@ -92,7 +91,21 @@ export function mapAdminProperty(row: SupabasePropertyRow): Property {
 
 export async function listAdminProperties() {
   const supabase = createSupabaseClient();
-  if (!supabase) return sampleProperties;
+  if (!supabase) {
+    const response = await fetch("/api/admin/local-properties", {
+      cache: "no-store",
+    });
+    const result = (await response.json().catch(() => null)) as {
+      error?: string;
+      properties?: Property[];
+    } | null;
+
+    if (!response.ok || !result?.properties) {
+      throw new Error(result?.error ?? "Não foi possível carregar os imóveis locais.");
+    }
+
+    return result.properties;
+  }
 
   const { data, error } = await supabase
     .from("properties")
@@ -131,7 +144,21 @@ export async function updatePropertyState(id: string, payload: Partial<Pick<Prop
 
 export async function deleteProperty(id: string) {
   const supabase = createSupabaseClient();
-  if (!supabase) throw new Error("Supabase nao configurado.");
+  if (!supabase) {
+    const response = await fetch(`/api/admin/local-properties/${encodeURIComponent(id)}`, {
+      method: "DELETE",
+    });
+    const result = (await response.json().catch(() => null)) as {
+      error?: string;
+    } | null;
+
+    if (!response.ok) {
+      throw new Error(result?.error ?? "Não foi possível excluir o imóvel.");
+    }
+
+    return;
+  }
+
   const { error } = await supabase.from("properties").delete().eq("id", id);
   if (error) throw new Error(error.message);
 }

@@ -127,6 +127,8 @@ Opcao via SQL Editor:
 - Crie usuarios pelo Supabase Auth.
 - Insira ou aprove registros em `profiles` com `role = 'admin'` para administracao total.
 - Corretores/agencias devem usar `profiles`, `organizations` e `organization_members`.
+- Em **Authentication > URL Configuration** no Supabase, adicione `http://localhost:3000/admin/redefinir-senha` e a mesma rota do dominio de producao em **Redirect URLs** para habilitar a recuperacao de senha.
+- No modo de acesso local, redefina `LOCAL_ADMIN_PASSWORD` em `.env.local` e reinicie o servidor. E-mails adicionais podem ser separados por virgula em `LOCAL_ADMIN_ADDITIONAL_EMAILS`.
 - Nunca exponha `SUPABASE_SERVICE_ROLE_KEY` no frontend. Use apenas em rotinas server-side seguras.
 
 ### Teste local

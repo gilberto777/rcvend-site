@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { getWhatsAppUrl } from "@/lib/formatters";
 
 type LeadFormProps = {
   propertyId: string;
@@ -26,6 +27,16 @@ export function LeadForm({ propertyId, propertyTitle }: LeadFormProps) {
     event.preventDefault();
     setStatus("sending");
     const form = new FormData(event.currentTarget);
+    const name = String(form.get("name") ?? "").trim();
+    const phone = String(form.get("phone") ?? "").trim();
+    const whatsappMessage = [
+      `Olá! Meu nome é ${name} e tenho interesse no imóvel ${propertyTitle}.`,
+      message,
+      `Meu WhatsApp: ${phone}`,
+      `Link do imóvel: ${window.location.href}`,
+    ].join("\n\n");
+
+    window.open(getWhatsAppUrl(whatsappMessage), "_blank", "noopener,noreferrer");
 
     const response = await fetch("/api/leads", {
       method: "POST",
@@ -33,9 +44,9 @@ export function LeadForm({ propertyId, propertyTitle }: LeadFormProps) {
       body: JSON.stringify({
         property_id: propertyId,
         property_title: propertyTitle,
-        name: form.get("name"),
+        name,
         email: form.get("email"),
-        phone: form.get("phone"),
+        phone,
         message,
       }),
     });
@@ -91,14 +102,14 @@ export function LeadForm({ propertyId, propertyTitle }: LeadFormProps) {
           />
           <span className="mt-1 block text-right text-xs text-muted">{message.length}/500</span>
         </label>
-        <button disabled={status === "sending"} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-cta px-5 py-4 font-extrabold text-white shadow-lg shadow-cta/20 transition hover:bg-cta-hover disabled:opacity-60 sm:col-span-2">
-          {status === "sending" ? "Enviando..." : "Enviar interesse"}
-          <Send className="h-4 w-4" />
+        <button disabled={status === "sending"} className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-4 font-extrabold text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#1ebe5d] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] disabled:opacity-60 sm:col-span-2">
+          {status === "sending" ? "Abrindo WhatsApp..." : "Falar pelo WhatsApp"}
+          <MessageCircle className="h-5 w-5" />
         </button>
         <p className="text-xs leading-5 text-muted sm:col-span-2">
           Ao enviar, você concorda com nossa <Link href="/politica-de-privacidade" className="font-bold text-brand underline underline-offset-2">Política de Privacidade</Link>.
         </p>
-        {status === "sent" ? <p className="text-sm font-semibold text-brand sm:col-span-2">Interesse enviado com sucesso.</p> : null}
+        {status === "sent" ? <p className="text-sm font-semibold text-brand sm:col-span-2">WhatsApp aberto e interesse registrado com sucesso.</p> : null}
         {status === "error" ? <p className="text-sm font-semibold text-red-700 sm:col-span-2">Não foi possível enviar agora.</p> : null}
       </div>
     </form>
