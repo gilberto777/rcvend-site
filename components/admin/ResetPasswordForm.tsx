@@ -5,17 +5,34 @@ import { useEffect, useState } from "react";
 import { getAuthErrorMessage } from "@/lib/admin/auth-error-message";
 import { createSupabaseClient, hasSupabaseEnv } from "@/lib/supabase/client";
 
-type RecoveryStatus = "checking" | "ready" | "invalid" | "success";
+type RecoveryStatus = "checking" | "confirm" | "ready" | "invalid" | "success";
 
 export function ResetPasswordForm() {
   const supabaseAvailable = hasSupabaseEnv();
   const [status, setStatus] = useState<RecoveryStatus>(() => supabaseAvailable ? "checking" : "invalid");
   const [error, setError] = useState(() => supabaseAvailable ? "" : "A recuperação por e-mail não está disponível enquanto o RC Vend estiver usando acesso local.");
   const [loading, setLoading] = useState(false);
+  const [tokenHash, setTokenHash] = useState("");
 
   useEffect(() => {
     const supabase = createSupabaseClient();
     if (!supabase) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const recoveryTokenHash = params.get("token_hash");
+    const recoveryType = params.get("type");
+
+    if (recoveryTokenHash && recoveryType === "recovery") {
+      let tokenActive = true;
+      queueMicrotask(() => {
+        if (!tokenActive) return;
+        setTokenHash(recoveryTokenHash);
+        setStatus("confirm");
+      });
+      return () => {
+        tokenActive = false;
+      };
+    }
 
     let active = true;
     const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
@@ -42,6 +59,38 @@ export function ResetPasswordForm() {
       authListener.subscription.unsubscribe();
     };
   }, []);
+
+  async function handleConfirmRecovery() {
+    const supabase = createSupabaseClient();
+    if (!supabase || !tokenHash) {
+      setError("Este link de recuperação é inválido ou expirou. Solicite um novo link.");
+      setStatus("invalid");
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+
+    try {
+      const { error: verifyError } = await supabase.auth.verifyOtp({
+        token_hash: tokenHash,
+        type: "recovery",
+      });
+
+      if (verifyError) {
+        setError(getAuthErrorMessage(verifyError, "Este link de recuperação é inválido ou expirou. Solicite um novo link."));
+        setStatus("invalid");
+        return;
+      }
+
+      window.history.replaceState({}, "", window.location.pathname);
+      setStatus("ready");
+    } catch {
+      setError("Não foi possível validar o link. Verifique sua conexão e tente novamente.");
+    } finally {
+      setLoading(false);
+    }
+  }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -103,6 +152,27 @@ export function ResetPasswordForm() {
           Sua nova senha foi cadastrada. Agora você já pode entrar novamente.
         </div>
         <Link href="/admin/login" className="mt-6 block rounded-2xl bg-brand px-5 py-4 text-center font-black text-white hover:bg-brand-strong">Ir para o login</Link>
+      </section>
+    );
+  }
+
+  if (status === "confirm") {
+    return (
+      <section className="mx-auto w-full max-w-md rounded-3xl border border-line bg-white p-8 shadow-xl">
+        <p className="text-xs font-black uppercase tracking-[0.22em] text-brand">Recuperação de acesso</p>
+        <h1 className="mt-2 text-3xl font-black">Confirme a redefinição</h1>
+        <p className="mt-4 text-sm leading-6 text-muted">
+          Para sua segurança, confirme que deseja usar este link para criar uma nova senha.
+        </p>
+        <button
+          type="button"
+          disabled={loading}
+          onClick={handleConfirmRecovery}
+          className="mt-6 w-full rounded-2xl bg-brand px-5 py-4 font-black text-white hover:bg-brand-strong disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          {loading ? "Validando..." : "Continuar e criar nova senha"}
+        </button>
+        {error && <p role="alert" aria-live="polite" className="mt-4 rounded-2xl border border-red-200 bg-red-50 p-3 text-sm font-semibold text-red-700">{error}</p>}
       </section>
     );
   }

@@ -6,6 +6,7 @@ type SupabaseAuthError = {
 const AUTH_ERROR_MESSAGES: Record<string, string> = {
   email_not_confirmed: "Confirme seu e-mail antes de entrar.",
   invalid_credentials: "E-mail ou senha incorretos.",
+  otp_expired: "Este link de recuperação é inválido ou expirou. Solicite um novo link.",
   over_email_send_rate_limit: "Muitas solicitações foram feitas. Aguarde alguns minutos e tente novamente.",
   over_request_rate_limit: "Muitas tentativas foram feitas. Aguarde alguns minutos e tente novamente.",
   same_password: "A nova senha deve ser diferente da senha atual.",
