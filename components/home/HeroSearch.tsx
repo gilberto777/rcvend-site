@@ -22,13 +22,13 @@ const quickFilters = [
 
 export function HeroSearch() {
   return (
-    <form action="/imoveis" className="w-full rounded-[28px] border border-white/35 bg-white p-4 shadow-2xl shadow-brand-strong/25 sm:p-5 xl:p-6">
+    <form action="/imoveis" className="w-full min-w-0 max-w-full rounded-[28px] border border-white/35 bg-white p-4 shadow-2xl shadow-brand-strong/25 sm:p-5 xl:p-6">
       <div className="mb-4">
         <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-brand">Comece sua busca</p>
         <p className="mt-1 text-sm text-muted">Digite bairro, cidade, empreendimento ou característica.</p>
       </div>
 
-      <div className="mb-4 flex gap-2 overflow-x-auto rounded-2xl bg-background p-1 sm:grid sm:grid-cols-5 sm:overflow-visible">
+      <div className="scrollbar-none mb-4 flex gap-2 overflow-x-auto rounded-2xl bg-background p-1 sm:grid sm:grid-cols-5 sm:overflow-visible">
         {searchTabs.map((tab, index) => (
           <Link
             key={tab.label}
@@ -42,7 +42,7 @@ export function HeroSearch() {
         ))}
       </div>
 
-      <div className="flex items-center gap-2 overflow-x-auto pb-4">
+      <div className="scrollbar-none flex items-center gap-2 overflow-x-auto pb-4">
         <span className="shrink-0 text-xs font-bold uppercase tracking-[0.14em] text-muted">Exemplos</span>
         {quickFilters.map((filter) => (
           <button

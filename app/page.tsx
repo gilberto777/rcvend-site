@@ -136,8 +136,8 @@ export default async function Home() {
           className="object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,38,83,0.96)_0%,rgba(0,38,83,0.86)_38%,rgba(0,38,83,0.52)_68%,rgba(0,38,83,0.18)_100%)]" />
-        <div className="container-page relative grid min-h-[520px] items-center gap-10 py-10 lg:grid-cols-[minmax(0,0.72fr)_minmax(600px,1.28fr)] xl:gap-14">
-          <div className="max-w-2xl">
+        <div className="container-page relative grid min-h-[520px] min-w-0 items-center gap-10 py-10 lg:grid-cols-[minmax(0,0.72fr)_minmax(600px,1.28fr)] xl:gap-14">
+          <div className="min-w-0 max-w-2xl">
             <p className="inline-flex rounded-full border border-accent/40 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-accent">
               Portal inteligente de imóveis
             </p>
@@ -147,17 +147,17 @@ export default async function Home() {
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/78">
               Compare oportunidades, descubra bairros estratégicos e fale com especialistas para comprar, alugar ou investir com mais segurança.
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 href="/imoveis"
-                className="inline-flex items-center gap-2 rounded-full bg-cta px-7 py-4 font-extrabold text-white shadow-lg shadow-cta/20 transition hover:bg-cta-hover"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-cta px-7 py-4 font-extrabold text-white shadow-lg shadow-cta/20 transition hover:bg-cta-hover"
               >
                 Buscar imóvel
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <a
                 href={getWhatsAppUrl("Olá! Vim pelo RC Vend e quero ajuda para encontrar um imóvel.")}
-                className="inline-flex items-center gap-2 rounded-full border border-white/28 px-7 py-4 font-black text-white transition hover:border-accent hover:text-accent"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/28 px-7 py-4 font-black text-white transition hover:border-accent hover:text-accent"
               >
                 <MessageCircle className="h-5 w-5" />
                 Falar com especialista
@@ -169,7 +169,7 @@ export default async function Home() {
               <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-accent" /> Atendimento direto</span>
             </div>
           </div>
-          <div className="w-full lg:self-center">
+          <div className="min-w-0 w-full lg:self-center">
             <HeroSearch />
           </div>
         </div>

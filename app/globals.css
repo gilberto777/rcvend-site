@@ -67,6 +67,14 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 87, 168, 0.22);
 }
 
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 .rich-text-editor p,
 .formatted-description p {
   margin: 0;
